@@ -1,0 +1,137 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f3f4f6;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Main Content Container */
+  main {
+    width: 85%;
+    max-width: 800px;
+    background: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  main:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Heading Style */
+  h2 {
+    color: #2b3a67;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    color: #444;
+    margin-bottom: 12px;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Quiz Container */
+  .tamil-quiz, .quiz-summary {
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 10px;
+  }
+  
+  .tamil-quiz h2,
+  .quiz-summary h2 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 12px;
+  }
+  
+  /* Options Styling */
+  .options {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+  
+  .options li {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.2s;
+  }
+  
+  .options li:hover {
+    background: #e2e8f0;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Checkbox Styling */
+  .options li input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: #3b82f6;
+    transform: scale(1.2);
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  button:hover {
+    background: #3b82f6;
+  }
+  
+  button:focus {
+    outline: 3px solid #93c5fd;
+  }
+  
+  /* Quiz Over Screen */
+  .quiz-summary {
+    text-align: center;
+  }
+  
+  /* Tab Content Style */
+  .tab-content {
+    display: none;
+    padding: 25px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
